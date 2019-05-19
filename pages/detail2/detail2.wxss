@@ -1,0 +1,39 @@
+/* pages/detail2/detail2.wxss */
+.message_box {
+  padding: 20rpx;
+  font-size: 32rpx;
+  width: 100%;
+}
+.message_table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  background-color: #F7FBFE;
+}
+.message_item {
+  display: flex;
+  padding: 20rpx;
+}
+.message_item text:nth-child(1) {
+  flex: 1;
+  color: #c1c1c1;
+  font-size: 30rpx;
+}
+
+.message_item text:nth-child(2) {
+  flex: 2;
+}
+
+.img_box {
+    margin-top: 30rpx;
+}
+
+.img_box_lable {
+  padding-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.img_item {
+  width: 100%;
+  height: auto;
+}

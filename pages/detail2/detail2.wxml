@@ -1,0 +1,44 @@
+<!--pages/detail2/detail2.wxml-->
+<view>
+   <view class='message_box'>
+      <text class='message_lable'>基本信息</text>
+      <view class='message_table'>
+         <view class='message_item'>
+            <text>商品信息</text>
+            <text>简爱100*3经典丝滑裸酸奶</text>
+         </view>
+        <view  class='message_item'>
+            <text>商品编号</text>
+            <text>103227241</text>
+         </view>
+        <view  class='message_item'>
+            <text>品牌</text>
+            <text>简爱</text>
+         </view>
+         <view  class='message_item'>
+            <text>上架时间</text>
+            <text>2019-05-19 10：20</text>
+         </view>
+         <view  class='message_item'>
+            <text>类型</text>
+            <text>发酵乳制品</text>
+         </view>
+         <view  class='message_item'>
+            <text>商品毛重</text>
+            <text>1000g</text>
+         </view>
+      </view>
+   </view>
+
+   <view>
+      <text class='img_box_lable'>图文详情</text>
+      <view class='img_box'>
+         <image class='img_item' wx:for="{{detailImgList}}"
+                wx:key="{{index}}" src='{{item}}'
+                mode='widthFix'
+                lazy-load	
+         ></image>
+      </view>
+   </view>
+
+</view>

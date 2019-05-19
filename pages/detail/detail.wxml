@@ -1,0 +1,38 @@
+<view class='mianbox'>
+  <swiper indicator-dots indicator-active-color="red" indicator-color="#eee" autoplay class='swiper_container'>
+    <swiper-item wx:for="{{main_img_list}}" wx:key="{{index}}">
+      <image src="{{item}}" class='swiperImg'></image>
+    </swiper-item>
+  </swiper>
+
+  <view class='goods_message'>
+    <text class='goods_price'>￥ 13.50 / 组</text>
+    <text class='goods_tittle'>简爱 100*3 经典丝滑裸酸奶</text>
+  </view>
+
+  <view class='goods_note'>
+    <text class='goods_note_text'>生牛乳、糖、乳酸菌、没有其他的了</text>
+  </view>
+
+  <view class='goods_num'>
+    <text class='goods_num_tittle'>数量</text>
+    <view class='goods_num_cal'>
+       <text class='goods_num_cal_item'>-</text>
+       <input class='goods_num_cal_item' value='{{goodsCount}}'></input>
+       <text class='goods_num_cal_item' catchtap='addGoodsCount'>+</text>
+    </view>
+  </view>
+
+  <view class='goods_tools'>
+    <view class='goods_tools_item'>
+       <image class='goods_tools_item_img' src="../img/share.png"></image>
+       <text class='goods_tools_item_text'>分享</text>
+    </view>
+    <view class='goods_tools_item'>
+       <image class='goods_tools_item_img' src="../img/cart.png"></image>
+       <text class='goods_tools_item_text'>购物车</text>
+    </view>
+    <button class='add_car'>加入购物车</button>
+  </view>
+
+</view>
