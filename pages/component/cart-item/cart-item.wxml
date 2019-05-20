@@ -3,7 +3,7 @@
       <checkbox catchtap='changeCk' checked="{{check}}" class='select-box'></checkbox>
       <image class='img'  src='{{imgUrl}}'></image>
       <view class='img-right'>
-         <text class='img-right-tittle'>{{tittle}}</text>
+         <text catchtap='toDetailPage' class='img-right-tittle'>{{tittle}}</text>
          <view class='img-right-message'>
             <text class='price'>￥ {{price}}/{{unit}}</text>
             <view class='count-cal'>

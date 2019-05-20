@@ -41,8 +41,12 @@ Component({
    */
   methods: {
     changeCk(e){
-      console.log('changeCk', e.currentTarget);
       this.changeSelectItem();
+    },
+    toDetailPage(){
+      wx.switchTab({
+        url: '/pages/detail/detail',
+      })
     },
     changeSelectItem() {
       let flag = !this.properties.check
@@ -68,6 +72,10 @@ Component({
       if (this.data.goodsCount > 1) {
         let goodsCount = --this.data.goodsCount;
         this.setData({
+          goodsCount: goodsCount
+        });
+        this.triggerEvent('addGoodsCount', {
+          index: this.properties.index,
           goodsCount: goodsCount
         });
       }

@@ -51,7 +51,7 @@ Page({
     }
     this.setData({
       selectedNum: count,
-      xsjeSum: xsjeSum,
+      xsjeSum: xsjeSum.toFixed(2),
       isSelectAll: flag
     });
   },

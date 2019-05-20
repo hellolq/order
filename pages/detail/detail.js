@@ -9,6 +9,11 @@ Page({
     main_img_list:[],
     goodsCount:1
   },
+  toCartPage(){
+    wx.navigateTo({
+      url: '/pages/cart/cart',
+    })
+  },
   addGoodsCount: function(){
      let goodsCount = ++this.data.goodsCount;
      this.setData({

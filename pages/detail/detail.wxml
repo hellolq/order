@@ -28,9 +28,9 @@
        <image class='goods_tools_item_img' src="../img/share.png"></image>
        <text class='goods_tools_item_text'>分享</text>
     </view>
-    <view class='goods_tools_item'>
+    <view class='goods_tools_item' catchtap='toCartPage'>
        <image class='goods_tools_item_img' src="../img/cart.png"></image>
-       <text class='goods_tools_item_text'>购物车</text>
+       <text  class='goods_tools_item_text'>购物车</text>
     </view>
     <button class='add_car'>加入购物车</button>
   </view>
