@@ -1,0 +1,16 @@
+<!--pages/component/cart-item/cart-item.wxml-->
+<view class='containter'>
+      <checkbox catchtap='changeCk' checked="{{check}}" class='select-box'></checkbox>
+      <image class='img'  src='{{imgUrl}}'></image>
+      <view class='img-right'>
+         <text class='img-right-tittle'>{{tittle}}</text>
+         <view class='img-right-message'>
+            <text class='price'>￥ {{price}}/{{unit}}</text>
+            <view class='count-cal'>
+               <view hover-class="vw_red" catchtap='delGoodsCount'   class='count-cal-item'>-</view>
+               <input class='count-cal-item' value="{{goodsCount}}"></input>
+               <view hover-class="vw_red" catchtap='addGoodsCount' class='count-cal-item'>+</view>
+            </view>
+         </view>
+      </view>
+   </view>

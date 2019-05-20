@@ -8,3 +8,15 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+checkbox .wx-checkbox-input {
+width: 38rpx;
+height: 38rpx;
+border-radius: 38rpx;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+color: white !important;
+background: #F85D5B;
+}
+
