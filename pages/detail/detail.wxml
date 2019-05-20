@@ -17,9 +17,9 @@
   <view class='goods_num'>
     <text class='goods_num_tittle'>数量</text>
     <view class='goods_num_cal'>
-       <text class='goods_num_cal_item'>-</text>
+       <view hover-class="vw_red" class='goods_num_cal_item'    catchtap='delGoodsCount'>-</view>
        <input class='goods_num_cal_item' value='{{goodsCount}}'></input>
-       <text class='goods_num_cal_item' catchtap='addGoodsCount'>+</text>
+       <view hover-class="vw_red" class='goods_num_cal_item' catchtap='addGoodsCount'>+</view>
     </view>
   </view>
 

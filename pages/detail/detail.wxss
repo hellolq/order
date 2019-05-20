@@ -1,4 +1,5 @@
 /* pages/detail/detail.wxss */
+
 .mianbox {
   background-color: #F2F3F7;
   position: relative;
@@ -123,4 +124,9 @@
   text-align: center;
   flex: 1;
   color:#c1c1c1;
+}
+
+.vw_red {
+  color: #F85D5B;
+  background-color: #c1c1c1;
 }

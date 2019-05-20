@@ -1,0 +1,18 @@
+<!--pages/cart/cart.wxml-->
+<view>
+   <view class='containter'>
+      <checkbox class='select-box'></checkbox>
+      <image class='img'  src='http://img.alicdn.com/bao/uploaded/i4/725677994/O1CN01RvfImO28vIe0NLdu9_!!725677994.jpg_250x250Q50s50.jpg_.webp'></image>
+      <view class='img-right'>
+         <text class='img-right-tittle'>简爱100*3丝滑裸酸奶</text>
+         <view class='img-right-message'>
+            <text class='price'>￥ 13.50/组</text>
+            <view class='count-cal'>
+               <view class='count-cal-item'>-</view>
+               <input class='count-cal-item' value="1"></input>
+               <view class='count-cal-item'>+</view>
+            </view>
+         </view>
+      </view>
+   </view>
+</view>
