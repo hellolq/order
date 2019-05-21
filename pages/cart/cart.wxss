@@ -1,4 +1,24 @@
 /* pages/cart/cart.wxss */
+.two-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.del-btn {
+  margin-left: auto;
+}
+.del-all-btn,
+.del-btn {
+   margin: 0;
+   border: 1rpx solid #F85D5B;
+   background-color: white;
+   border-radius: 10rpx;
+   color: #F85D5B;
+   font-size: 30rpx;
+}
+.del-btn {
+  margin:0 20rpx;
+}
 .cart_tittle
 ,.cart_edit {
   text-align: center;
@@ -22,7 +42,6 @@
   display: flex;
   height: 120rpx;
   background-color: #F0EFF4;
-  justify-content: center;
   align-items: center;
   font-size:28rpx; 
   width: 100%;

@@ -1,0 +1,68 @@
+/* pages/account/account.wxss */
+@import "../template/template.wxss";
+page {
+  background-color: #F2F3F7;
+}
+.box {
+  
+}
+.box-one{
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  background-color: white;
+  padding: 20rpx;
+}
+.get-type {
+  display: flex;
+  border-bottom: 4rpx solid #F6F6F6;
+}
+
+.get-type-item {
+  height: 60rpx;
+  width: auto;
+  margin-right: 20rpx;
+  font-size: 32rpx;
+}
+
+.active {
+  color:#F08485;
+  border-bottom: 4rpx solid #F08485;
+}
+.address {
+  height: 80rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.address-text{
+
+}
+.flag{
+  color: #CCCCCC;
+  font-size: 28px;
+  margin-left: auto;
+}
+
+.box-two {
+  margin-top: 30rpx;
+}
+
+.box-thr{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.pay-ty {
+  display: flex;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #F5F5F7;
+}
+
+.pay-ty-two {
+  margin-left: auto;
+}

@@ -9,6 +9,7 @@ Page({
     cartGoods: [],
     selectedNum: -1,
     xsjeSum:-1,
+    isEdit:false,
     isSelectAll: true
   },
 
@@ -22,6 +23,12 @@ Page({
       selectedNum: res.length
     });
     this.calSelectedNum(); 
+  },
+  changeEdit(){
+    let flag = this.data.isEdit;
+    this.setData({
+      isEdit: !flag,      
+    });
   },
   addGoodsCount(data){
     //let goodsCount = this.data.cartGoods[]

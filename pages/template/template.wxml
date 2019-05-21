@@ -1,0 +1,14 @@
+<!--pages/template/template.wxml-->
+<template name="goodItem">
+   <view class='containter'>
+     
+      <image class='img'  src='{{imgUrl}}'></image>
+      <view class='img-right'>
+         <text  class='img-right-tittle'>{{tittle}}</text>
+         <view class='img-right-message'>
+            <text class='price'>￥ {{price}}/{{unit}}</text>
+            <text class='num'>X{{goodsCount}}</text>
+         </view>
+      </view>
+   </view>
+</template>

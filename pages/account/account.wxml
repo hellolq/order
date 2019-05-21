@@ -1,0 +1,37 @@
+<!--pages/account/account.wxml-->
+<import src="/pages/template/template.wxml"/>
+<view class='box'>
+  <view class='box-one'>
+    <view class='get-type'>
+      <view catchtap='selectType' data-name='byYourself' class='get-type-item {{getType === "byYourself" ? "active":""}}'>
+        门店自提
+      </view>
+      <view catchtap='selectType' data-name='byDelivery' class='get-type-item {{getType === "byDelivery" ? "active":""}}'>
+        配送到家
+      </view>
+    </view>
+
+    <view class='address'>
+       <text class='address-text'>亲，你还没有哦收货地址信息，请添加</text>
+       <view class= 'flag iconfont iconi-right'></view>
+    </view>
+
+  </view>
+
+  <view class='box-two'>
+    <template wx:for="{{goodsList}}" wx:key="{{index}}" 
+     is="goodItem" data="{{...item}}" />
+  </view>
+
+  <view class='box-thr'>
+     <view class='pay-ty'>
+        <text class='pay-ty-one'>支付方式</text>
+        <text class='pay-ty-two'>在线支付</text>
+     </view>
+     <view class='pay-ty'>
+        <text class='pay-ty-one'>支付方式</text>
+        <text class='pay-ty-two'>在线支付</text>
+     </view>
+  </view>
+
+</view>
