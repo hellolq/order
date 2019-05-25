@@ -1,37 +1,80 @@
 <!--pages/account/account.wxml-->
-<import src="/pages/template/template.wxml"/>
+<import src="/pages/template/template.wxml" />
 <view class='box'>
   <view class='box-one'>
     <view class='get-type'>
       <view catchtap='selectType' data-name='byYourself' class='get-type-item {{getType === "byYourself" ? "active":""}}'>
         门店自提
       </view>
-      <view catchtap='selectType' data-name='byDelivery' class='get-type-item {{getType === "byDelivery" ? "active":""}}'>
+      <view catchtap='selectType' data-name='byDelivery' 
+      class='get-type-item {{getType === "byDelivery" ? "active":""}}'>
         配送到家
       </view>
     </view>
 
-    <view class='address'>
-       <text class='address-text'>亲，你还没有哦收货地址信息，请添加</text>
-       <view class= 'flag iconfont iconi-right'></view>
+    <view catchtap='bindByDeliveryTap' 
+     wx:if="{{getType === 'byDelivery'}}" class='address'>
+      <text 
+      class='address-text'>亲，你还没有哦收货地址信息，请添加</text>
+      <view class='flag iconfont iconi-right'></view>
+    </view>
+
+    <view catchtap='bindByYourselfTap' 
+    wx:if="{{getType === 'byYourself'}}" class='address'>
+      <view class='address-text'>
+         <text wx:if="{{!myself_message.flag}}">亲，你还没有自提信息，请添加</text>
+         <view wx:if="{{myself_message.flag}}" class='myself_message_box'>
+            <text>自提人：{{myself_message.clientName}}</text>
+            <text>手机号：{{myself_message.clientPhone}}</text>
+         </view>
+      </view>
+      <view class='flag iconfont iconi-right'></view>
     </view>
 
   </view>
 
   <view class='box-two'>
-    <template wx:for="{{goodsList}}" wx:key="{{index}}" 
-     is="goodItem" data="{{...item}}" />
+    <template wx:for="{{goodsList}}" wx:key="{{index}}" is="goodItem" data="{{...item}}" />
   </view>
 
   <view class='box-thr'>
-     <view class='pay-ty'>
-        <text class='pay-ty-one'>支付方式</text>
-        <text class='pay-ty-two'>在线支付</text>
-     </view>
-     <view class='pay-ty'>
-        <text class='pay-ty-one'>支付方式</text>
-        <text class='pay-ty-two'>在线支付</text>
-     </view>
+    <view class='pay-ty'>
+      <text class='pay-ty-one'>支付方式</text>
+      <text class='pay-ty-two'>在线支付</text>
+    </view>
+    <view class='pay-ty'>
+      <text class='pay-ty-one'>运费</text>
+      <text class='pay-ty-two'>￥0元</text>
+    </view>
+
+    <view class='pay-ty' wx:if="{{getType === 'byDelivery'}}">
+      <text  class='pay-ty-one'>配送时间</text>
+      <view class='pay-ty-two'>
+        <picker mode="multiSelector" value="{{multiIndex}}" 
+        range="{{multiArray}}" bindchange="bindDeliverTimeChange">
+          <view class="picker send-time">{{deliver_time}}</view>
+        </picker>
+        <text class='flag iconfont iconi-right'></text>
+      </view>
+
+    </view>
+
+   <view class='pay-ty' wx:if="{{getType === 'byYourself'}}">
+      <text  class='pay-ty-one'>配送时间</text>
+      <view class='pay-ty-two'>
+        <text >步步高梅溪湖店</text>
+      </view>
+    </view>
+
+
   </view>
+
+  <view class='page-foot'>
+    <text class='real-price'>实付款：￥32.90</text>
+    <text class='sub-order'>提交订单</text>
+  </view>
+
+  <model-self bindbindSureMessage="bindSureMessage" 
+  isShow="{{isShowModel}}"></model-self>
 
 </view>

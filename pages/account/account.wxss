@@ -3,9 +3,6 @@
 page {
   background-color: #F2F3F7;
 }
-.box {
-  
-}
 .box-one{
   display: flex;
   flex-direction: column;
@@ -35,9 +32,7 @@ page {
   display: flex;
   align-items: center;
 }
-.address-text{
 
-}
 .flag{
   color: #CCCCCC;
   font-size: 28px;
@@ -52,6 +47,7 @@ page {
   display: flex;
   flex-direction: column;
   background-color: white;
+  margin-bottom: 420rpx;
 }
 
 .pay-ty {
@@ -65,4 +61,45 @@ page {
 
 .pay-ty-two {
   margin-left: auto;
+  display:flex;
+
 }
+
+.page-foot{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
+  height: 120rpx;
+}
+
+.sub-order{
+ margin-left: auto;
+ background-color: #F08485;
+ color: white;
+ font-size: 30rpx;
+ height: 80rpx;
+ width: 220rpx;
+ border-radius: 10rpx;
+ margin-right: 20rpx;
+ text-align: center;
+ line-height: 80rpx;
+}
+
+.real-price {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.send-time {
+  color: #F08485;
+}
+
+.myself_message_box {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+

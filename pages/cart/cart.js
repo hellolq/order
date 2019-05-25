@@ -30,6 +30,11 @@ Page({
       isEdit: !flag,      
     });
   },
+  toAccount(){
+    wx.navigateTo({
+      url: '/pages/account/account',
+    })
+  },
   addGoodsCount(data){
     //let goodsCount = this.data.cartGoods[]
     let index = data.detail.index;

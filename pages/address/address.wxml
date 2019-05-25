@@ -1,0 +1,9 @@
+<!--pages/address/address.wxml-->
+<view class='box'>
+  <view class='note-box'>
+    <image class='address-img' src='../img/no-address.png'></image>
+    <text class='note-mes-text'>您还没有添加收货地址</text>
+    <button catchtap='toAddAddress' class='add-address-btn'>添加新地址</button>
+  </view>
+
+</view>

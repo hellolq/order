@@ -1,0 +1,53 @@
+/* pages/component/model-self/model-self.wxss */
+
+@import "../../../lib/iconfont.wxss"
+.black_box {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #B3B3B3;
+  opacity:0.5;
+  z-index: 98;
+}
+.model-box{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  top: 25%;
+  left: 50%;
+  margin-left: -40%;
+  width: 80%;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  z-index: 99;
+  opacity:1;
+}
+
+.model-input-box {
+  padding: 20rpx;
+}
+
+.model-input {
+  display: flex;
+  background-color: #f8f8f8;
+  margin-top: 20rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  padding:0 20rpx;
+}
+
+.model-btn {
+  display: flex;
+  background-color: white;
+  color: #f08485;
+  border-top: 1rpx solid #f7f7f7;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+
+.iconfont {
+  text-align: right;
+}

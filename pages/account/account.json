@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "model-self":"../component/model-self/model-self"
+  },
+  "navigationBarTitleText": "结算"
 }

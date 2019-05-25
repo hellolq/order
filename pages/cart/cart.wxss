@@ -25,6 +25,7 @@
   font-size: 32rpx;
   height: 60rpx;
   font-weight: 600;
+  line-height: 60rpx;
 }
 .cart_edit {
   position: absolute;

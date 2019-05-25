@@ -1,0 +1,55 @@
+/* pages/addAddress/addAddress.wxss */
+page{
+  background-color: #F2F3F7;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  padding: 20rpx;
+  background-color: white;
+}
+
+.default-address {
+  display: flex;
+   margin-top:50rpx;
+   margin-bottom: 30rpx;
+}
+
+.address-input {
+  vertical-align: middle;
+}
+.check-right {
+  margin-left: auto;
+}
+
+.save-btn {
+  margin-top: 10%;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 90%;
+  color: white;
+  background-color: #F08485;
+}
+
+.select-address {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  margin-left: auto;
+  color: #B6B6B6;
+}
+
+.box-item {
+  background-color: #F2F3F7;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+
+.note-text {
+  color: #B6B6B6;
+}

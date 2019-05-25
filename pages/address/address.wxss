@@ -1,0 +1,30 @@
+/* pages/address/address.wxss */
+.box {
+  height: 100%;
+}
+
+.note-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address-img {
+  margin-top: 10%;
+  height: 300rpx;
+  width: 300rpx;
+}
+
+.note-mes-text {
+  margin-top: 10%;
+  font-size: 30rpx;
+}
+
+.add-address-btn {
+  width: 90%;
+  font-size: 30rpx;
+  border: 1rpx solid  #F08485;
+  margin-top: 50rpx;
+  background-color: white;
+  color:  #F08485;
+}

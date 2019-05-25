@@ -1,0 +1,17 @@
+<!--pages/component/model-self/model-self.wxml-->
+<view wx:if="{{isShow}}">
+  <view class="model-box">
+
+    <view class='model-input-box'>
+      <view catchtap='bindShutDown' class='iconfont iconShut-down'></view>
+      <input bindinput="bindClientName" name="clientName"
+      focus="true" 
+      class='model-input' placeholder='请输入自提人姓名'></input>
+      <input bindinput='bindClientPhone' name="clientPhone" 
+      class='model-input' placeholder='请输入手机号码'></input>
+    </view>
+    <view catchtap='bindSureMessage' class='model-btn'>确定</view>
+  </view>
+  <view catchtap='bindShutDown'
+   capture-catch:touchmove="preventdefault" class='black_box'></view>
+</view>

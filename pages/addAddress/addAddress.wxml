@@ -1,0 +1,22 @@
+<!--pages/addAddress/addAddress.wxml-->
+<view class='box'>
+  <view class='box-one'>
+    <view class='select-address box-item'>
+      <input disabled="true" class='address-input' placeholder='小区/大厦/学校'></input>
+      <view class='flag iconfont iconi-right'></view>
+    </view>
+
+    <input value=''  class='box-item' placeholder='楼号-门牌号'></input>
+    <input value=''  class='box-item' placeholder='收货人'></input>
+    <input value=''  class='box-item' placeholder='手机号'></input>
+    <view  class='default-address'>
+      <view>
+      <text>设置默认地址</text>
+      <text class='note-text'>（注：每次下单时会使用该地址）</text>
+      </view>
+      <checkbox class='check-right'   />
+    </view>
+  </view>
+  
+</view>
+<button class='save-btn'>保存并使用</button>
